@@ -1,0 +1,166 @@
+.header{
+    line-height: 16px;
+    vertical-align: baseline;
+    font-family: 'Inter';
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    transition: .4s linear;
+    z-index: 1;
+    background-color: white;
+}
+
+.header-grid {
+    box-sizing: border-box;
+    padding: 0px 36px;
+    height: 124px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1320px; 
+    display: grid;
+    grid-template-areas: 
+    "main-menu logo auxiliary"
+    "products products products";
+    grid-template-columns: 1fr clamp(142px,22vw,174px) 1fr;
+    grid-template-rows: 80px 44px;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    box-sizing: inherit;
+    height: 75px;
+    width: auto;
+    margin-bottom: 10px;
+    grid-area: logo;
+}
+
+.main-menu {
+    box-sizing: inherit;
+    grid-area: main-menu;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 46px;
+    font-weight: 400px;
+    font-size: 16px;
+}
+
+.main-menu_menu{
+    box-sizing: inherit;
+    padding-right: 18px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    margin-left: 13px;
+    text-align: center;
+    
+}
+
+.main-menu_button{
+    box-sizing: inherit;
+    width: 18px;
+    height: 18px;
+    fill: blue;
+   
+}
+
+.main-menu_vitrine{
+    box-sizing: inherit;
+    display: inline-block;
+    text-align: center;
+    min-width: 5.25rem;
+    border-left: 1px solid #ebedef
+}
+
+.auxiliary-menu{
+    box-sizing: inherit;
+    grid-area: auxiliary;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 46px;
+    font-weight: 400px;
+    font-size: 16px;
+}
+
+.auxiliary-menu-conta{
+    box-sizing: inherit;
+    display: flex;
+    align-items: center;
+    min-width: 5.25rem;
+    text-align: center;
+}
+
+.auxiliary-menu-conta-logo{
+    box-sizing: inherit;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.auxiliary-menu-busca{
+    box-sizing: inherit;
+    display: flex;
+    align-items: center;
+    min-width: 5.25rem;
+    border-left: 1px solid #ebedef;
+    padding-left: 18px;
+    margin-left: 13px;
+}
+
+.auxiliary-menu-busca-lupa{
+    padding-left: 10px;
+    margin-top: 3px;
+}
+
+.Product-Links{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 0.1px solid #ccc;
+    border-top: 0.1px solid #ccc;
+    padding: 14px 0px;
+}
+
+.Product-Links-header{
+    box-sizing: inherit;
+    grid-area: products;
+}
+
+
+.Login {
+    text-decoration: none;
+}
+
+.Login:active{
+    transform: scale(0.9);
+}
+
+
+.Login:focus{
+    color: inherit;
+}
+
+.Login:hover{
+    border-radius: 30px;
+    background-color: #f8f8f8;
+}
+
+.Login-products {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Login-products:active{
+    transform: scale(0.95);
+}
+
+
+.Login-products:focus{
+    color: inherit;
+}
+

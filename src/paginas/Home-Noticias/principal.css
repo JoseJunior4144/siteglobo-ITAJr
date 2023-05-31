@@ -1,0 +1,28 @@
+.headline_container{
+    box-sizing: inherit;
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-style: normal;
+    line-height: 50px;
+    letter-spacing: -2px;
+    font-weight: 700;
+}
+
+.imagem-principal{
+    border-radius: 12px;
+    width: 632px;
+    height: auto;
+}
+
+.headline_bullets{
+    box-sizing: inherit;
+}
+
+
+.division_line{
+    border-bottom: 1px solid #ebedef;
+    opacity: 0.5;
+    margin-top: 20px;
+}
+
+

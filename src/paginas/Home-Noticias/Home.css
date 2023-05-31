@@ -1,0 +1,59 @@
+.hui-container{
+    padding: 0 36px;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    line-height: 16px;
+}
+.hui-grid{
+    box-sizing: inherit;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: calc(50% + 36px) 25% calc(25% - 36px);
+    grid-template-areas: 
+    "main coluna1 coluna2"
+    "row  coluna1 coluna2"
+    "-  coluna1 coluna2";
+}
+
+.principal{
+    box-sizing: inherit;
+    grid-area: main;
+    margin-right: 36px;
+    position: relative;
+    font-family: 'Inter';
+}
+
+.row{
+    box-sizing: inherit;
+    grid-area: row;
+    font-family: 'Inter';
+    margin-right: 36px;
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.coluna1{
+    box-sizing: inherit;
+    grid-area: coluna1;
+    font-family: 'Inter';
+    border-left: 1px solid #ebedef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.coluna2{
+    box-sizing: inherit;
+    grid-area: coluna2;
+    font-family: 'Inter';
+    padding-left: 30px;
+    border-left: 1px solid #ebedef;
+}
+

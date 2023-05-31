@@ -1,0 +1,36 @@
+.Noticia {
+    box-sizing: inherit;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+    width: 192px;
+    height: min-content;
+}
+.imagem-noticia{
+    box-sizing: inherit;
+    border-radius: 12px;
+    width: 192px;
+    height: auto;
+}
+
+.Noticia_headline{
+    box-sizing: inherit;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.subtitulo{
+    margin-left: -20px;
+}
+
+.Noticia_bullets{
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 10px;
+}
+
+
+.division_line{
+    border-bottom: 1px solid #ebedef;
+    opacity: 0.5;
+}

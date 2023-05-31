@@ -1,0 +1,124 @@
+.login-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
+.login-box{
+    background: linear-gradient(to bottom, rgb(0, 0, 155),rgb(93, 93, 248), rgb(244, 248, 21));
+    font-family: 'Roboto', sans-serif;
+    padding: 0 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    display: grid;
+    grid-template-areas: "Signnup Login";
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: ridge 1px #ccc;
+}
+
+.singup-area {
+    box-sizing: border-box;
+    grid: Signup;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    vertical-align: top;
+    text-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.signup{
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+.login-area{
+    box-sizing: border-box;
+    grid: Login;
+    background: linear-gradient(to top, rgb(0, 0, 155),rgb(174, 177, 0), rgb(221, 224, 3), rgb(221, 224, 3));
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 30px;
+    margin: -20px 0;
+    border-top: ridge 1px #ccc;
+    border-bottom: ridge 1px #ccc;
+}
+
+.login-area h3{
+    color: #454545;
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-size: 23px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.login-caixa-texto{
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #b5b5b5;
+}
+
+.input-icon{
+    line-height: 38px;
+    font-size: 15px;
+    padding: 0 10px;
+    color: grey;
+}
+
+.login-caixa-texto-input{
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+    height: 33px;
+    padding: 1.5px 48px 0 6px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.login-caixa-texto-input:focus{
+    outline: none;
+}
+
+.login-botao{
+    color: rgba(255,255,255,0.8);
+    background: #E9374C;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.login-botao:active{
+    transform: scale(0.99);
+}
+
+.login-botao:hover{
+    border-radius: 20px;
+    border: solid 0.5px #999;
+}
+
+.login-recuperacao{
+    display: block;
+    text-align: center;
+    font-size: 12px;   
+    text-decoration: none;
+    color: black;
+}

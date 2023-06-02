@@ -15,7 +15,7 @@ function ProductLinks() {
                 <Categoria link="https://www.instagram.com/agita.lgbt/" color="purple">AGITA</Categoria>
                 <Categoria link="https://www.itajunior.com.br" color="blue">ITA Júnior</Categoria>
                 <Categoria link="https://aerodesignita.wordpress.com" color="#FFC300">AeroDesign</Categoria>
-                <Categoria link="https://itandroids.com.br" color="gray">ITAndroids</Categoria>
+                <Categoria link="https://www.itandroids.com.br" color="gray">ITAndroids</Categoria>
                 <Categoria link="https://www.instagram.com/itarocket/?hl=pt" color="indigo"> ITARocket</Categoria>
             </div>
         </div>

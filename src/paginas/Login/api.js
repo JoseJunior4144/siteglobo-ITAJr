@@ -13,7 +13,7 @@ export function login() {
             Authorization: "Bearer " + localStorage.getItem("token")
         }
     }
-    axios.post("https://api-siteglobo-itajr.onrender.com/auth", {email, password}).then(res=> {
+    axios.post("?", {email, password}).then(res => {
         alert("Login efetuado com sucesso")
         console.log("Debug2")
         var token = res.data.token

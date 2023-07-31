@@ -6,7 +6,6 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import Header from './layout/cabecalho/header'
 import Content from './layout/Content'
 
-
 const App = props => (
 
     <div className="App">

@@ -1,5 +1,6 @@
 import React from 'react'
 import './Login.css'
+import { login } from './api.js'
 
 function Login() {
 
@@ -14,7 +15,7 @@ function Login() {
             <div className="login-box">
                 <div className="singup-area">
                     <i class="fa fa-user-circle" style={user_circle}></i>
-                    <span><a class="signup" href="">Não tem uma conta? Cadastre-se</a></span>
+                    <span><a class="signup">Não tem uma conta? Cadastre-se</a></span>
                 </div>
                 <form class="login-area">
                     <h3>LOGIN</h3>
@@ -22,18 +23,18 @@ function Login() {
                         <span class="input-icon">
                             <i class="fa fa-envelope"></i>
                         </span>
-                        <input class="login-caixa-texto-input" type="
-                        email" placeholder="Email"></input>
+                        <input class="login-caixa-texto-input" id="email" type="
+                        text" placeholder="E-mail"></input>
                     </div>
                     <div className="login-caixa-texto">
                         <span class="input-icon">
                             <i class="fa fa-lock"></i>
                         </span>
-                        <input class="login-caixa-texto-input" type="password" placeholder="Senha"></input>
+                        <input class="login-caixa-texto-input" id="password" type="text" placeholder="Senha"></input>
                     </div>
-                    <button class="login-botao">Entrar</button>
+                    <button class="login-botao" onClick={login}>Entrar</button>
                     <span >
-                        <a class="login-recuperacao" href="#">Esqueceu seu Email ou Senha?</a>
+                        <a class="login-recuperacao">Esqueceu seu Email ou Senha?</a>
                     </span>
                 </form>
             </div>

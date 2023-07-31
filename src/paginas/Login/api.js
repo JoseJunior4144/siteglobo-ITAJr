@@ -15,12 +15,10 @@ export function login() {
     }
     axios.post("?", {email, password}).then(res => {
         alert("Login efetuado com sucesso")
-        console.log("Debug2")
         var token = res.data.token
         localStorage.setItem("token", token)
         axiosConfig.headers.Authorization = "Bearer" + localStorage.getItem("token")
     }).catch(err => {
         alert("Oops... Ocorreu um erro!\nVerifique suas credenciais e tente novamente.")
-        console.log("Debug1")
     })
 }

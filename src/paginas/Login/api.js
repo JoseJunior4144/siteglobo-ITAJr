@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 export function login() {
+    alert("Teste")
     
     var emailField = document.getElementById("email")
     var passwordField = document.getElementById("password")

@@ -8,12 +8,9 @@ export function login() {
     var email = emailField.value
     var password = passwordField.value
 
-    var axiosConfig = {
-        headers: {
-            Authorization: "Bearer " + localStorage.getItem("token")
-        }
-    }
-    axios.post("https://api-siteglobo-itajr.onrender.com:5000/auth", {email, password}).then(res => {
+    console.log(email)
+    console.log(password)
+    axios.post("https://api-siteglobo-itajr.onrender.com/auth", {email, password}).then(res => {
         alert("Login efetuado com sucesso")
         var token = res.data.token
         localStorage.setItem("token", token)
@@ -21,4 +18,10 @@ export function login() {
     }).catch(err => {
         alert("Oops... Ocorreu um erro!\nVerifique suas credenciais e tente novamente.")
     })
+}
+
+export var axiosConfig = {
+    headers: {
+        Authorization: "Bearer " + localStorage.getItem("token")
+    }
 }

@@ -1,19 +1,9 @@
 import React, { useState } from 'react'
 import './Login.css'
 import { login } from './api.js'
+import { axiosConfig } from './api.js'
 
 function Login() {
-
-    const [error, setError] = useState(false)
-
-    const handleLoginClick = () => {
-        login().then(()=> {
-            setError(false)
-        }).catch((err)=> {
-            setError(true)
-        })
-    }
-
     const user_circle = {
         fontSize: 150,
         color: 'white',
@@ -33,18 +23,17 @@ function Login() {
                         <span class="input-icon">
                             <i class="fa fa-envelope"></i>
                         </span>
-                        <input class="login-caixa-texto-input" id="email" type="
-                        text" placeholder="E-mail"></input>
+                        <input class="login-caixa-texto-input" id="email" name="login" type="
+                        email" placeholder="e-mail"></input>
                     </div>
                     <div className="login-caixa-texto">
                         <span class="input-icon">
                             <i class="fa fa-lock"></i>
                         </span>
-                        <input class="login-caixa-texto-input" id="password" type="text" placeholder="Senha"></input>
+                        <input class="login-caixa-texto-input" id="password" type="password" name="password" placeholder="Senha"></input>
                     </div>
-                    {error && (<div className="error-message">Ocorreu um erro no login.</div>)}
-                    <button class="login-botao" onClick={handleLoginClick}>Entrar</button>
-                    <span >
+                    <button class="login-botao" onClick={login}>Entrar</button>
+                    <span>
                         <a class="login-recuperacao">Esqueceu seu Email ou Senha?</a>
                     </span>
                 </form>

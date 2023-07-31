@@ -4,13 +4,13 @@ import { login } from './api.js'
 
 function Login() {
 
-    const [error, setError] = useState(null)
+    const [error, setError] = useState(false)
 
     const handleLoginClick = () => {
         login().then(()=> {
-            setError(null)
+            setError(false)
         }).catch((err)=> {
-            setError('Ocorreu um erro no Login\nVerifique suas credenciais e tente novamente')
+            setError(true)
         })
     }
 
@@ -29,7 +29,6 @@ function Login() {
                 </div>
                 <form class="login-area">
                     <h3>LOGIN</h3>
-                    {error && <div className="error-message">{error}</div>}
                     <div className="login-caixa-texto">
                         <span class="input-icon">
                             <i class="fa fa-envelope"></i>
@@ -43,6 +42,7 @@ function Login() {
                         </span>
                         <input class="login-caixa-texto-input" id="password" type="text" placeholder="Senha"></input>
                     </div>
+                    {error && (<div className="error-message">Ocorreu um erro no login.</div>)}
                     <button class="login-botao" onClick={handleLoginClick}>Entrar</button>
                     <span >
                         <a class="login-recuperacao">Esqueceu seu Email ou Senha?</a>

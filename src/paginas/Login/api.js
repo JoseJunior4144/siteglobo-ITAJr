@@ -1,7 +1,6 @@
 import axios from 'axios'
 
 export function login() {
-    alert("Teste")
     
     var emailField = document.getElementById("email")
     var passwordField = document.getElementById("password")
@@ -14,7 +13,7 @@ export function login() {
             Authorization: "Bearer " + localStorage.getItem("token")
         }
     }
-
+    alert("Teste")
     axios.post("https://api-siteglobo-itajr.onrender.com/auth", {email, password}).then(res=> {
         alert("Login efetuado com sucesso")
         var token = res.data.token
@@ -22,5 +21,6 @@ export function login() {
         axiosConfig.headers.Authorization = "Bearer" + localStorage.getItem("token")
     }).catch(err => {
         alert("Oops... Ocorreu um erro!\nVerifique suas credenciais e tente novamente.")
+        
     })
 }
